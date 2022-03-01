@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #ffffff;
+    font-family: "Merriweather", serif;
+    font-style: normal;
+    font-size: 20px;
+    background-color: black;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+.player{
+    max-width: 1200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #bdae82;
+    margin: 0 auto;
+}
+
+.poster{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    background-image: url(assets/img/video-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+}
+
+.play-btn {
+    display: inline-block;
+    position: absolute;
+    z-index: 3;
+    background-image: url(assets/img/play-btn.svg);
+    background-size: contain;
+    width: 130px;
+    height: 130px;
+    cursor: pointer;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+video{
+    width: 100%;
+}
+.player-controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: calc(100% - 40px);
+    height: 60px;
+}
+  
+.player-controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: calc(100% - 40px);
+    height: 60px;
+}
+  
+.play{
+    background-image: url(assets/img/play.svg);
+}
+  
+.volume {
+    background-image: url(assets/img/volume.svg);
+}
+  
+.toggle-icon {
+    width: 40px;
+    height: 36px;
+    background-color: transparent;
+    color: transparent;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+}
+  
+.toggle-icon:hover,
+.play-icon:active {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+      contrast(87%);
+}
+  
+.progres {
+    width: calc(80% - 160px);
+}
+  
+.volume-progres {
+    width: calc(20% - 40px);
+}
+  
+.progres,
+.volume-progres {
+    height: 10px;
+    background: linear-gradient(
+      to right,
+      #bdae82 0%,
+      #bdae82 40%,
+      #c8c8c8 40%,
+      #c8c8c8 100%
+    );
+    outline: none;
+    -webkit-appearance: none;
+}
+  
+input[type="range"]::-webkit-slider-thumb {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    cursor: default;
+    -webkit-appearance: none;
+}
+/* 
+  
+video {
+    width: 100%;
+}
+  
+.video-player {
+    width: 1398px;
+    height: 703px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #bdae82;
+    margin: 0 auto;
+}
+  
+.play-btn {
+    display: inline-block;
+    position: absolute;
+    z-index: 3;
+    background-image: url(assets/img/play-btn.svg);
+    background-size: contain;
+    width: 130px;
+    height: 130px;
+    cursor: pointer;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+  
+  .player-controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: calc(100% - 40px);
+    height: 60px;
+  }
+  
+  .play {
+    background-image: url(assets/img/play.svg);
+  }
+  
+  .volume {
+    background-image: url(assets/img/volume.svg);
+  }
+  
+  .toggle-icon {
+    width: 40px;
+    height: 36px;
+    background-color: transparent;
+    color: transparent;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+  }
+  
+  .toggle-icon:hover,
+  .play-icon:active {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+      contrast(87%);
+  }
+  
+  .progres {
+    width: calc(80% - 160px);
+  }
+  
+  .volume-progres {
+    width: calc(20% - 40px);
+  }
+  
+  .progres,
+  .volume-progres {
+    height: 10px;
+    background: linear-gradient(
+      to right,
+      #bdae82 0%,
+      #bdae82 40%,
+      #c8c8c8 40%,
+      #c8c8c8 100%
+    );
+    outline: none;
+    -webkit-appearance: none;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    cursor: default;
+    -webkit-appearance: none;
+  }
+   */
